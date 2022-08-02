@@ -1,0 +1,40 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+switch:
+  - platform: rpi_gpio
+    switches:
+      - port: 5
+        name: "orchidarium.sprinkler.south"
+        unique_id: "relay-01--ch-01"
+      - port: 6
+        name: "orchidarium.sprinkler.north"
+        unique_id: "relay-01--ch-02"
+      - port: 13
+        name: "greenhouse.mister"
+        unique_id: "relay-01--ch-03"
+      - port: 16
+        name: "driveway.drip-line"
+        unique_id: "relay-01--ch-04"
+      - port: 19
+        name: "lanai.high-watering-line"
+        unique_id: "relay-01--ch-05"
+      - port: 20
+        name: "lanai.low-watering-line"
+        unique_id: "relay-01--ch-06"
+      - port: 21
+        name: "lanai.bench-watering-line"
+        unique_id: "relay-01--ch-07"
+      - port: 26
+        name: "backyard.watering-line"
+        unique_id: "relay-01--ch-08"
+
+
