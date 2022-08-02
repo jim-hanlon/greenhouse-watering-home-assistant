@@ -1,0 +1,9 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: "ha"
+    volumes:
+      - ./config:/config:rw
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
