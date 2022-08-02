@@ -1,3 +1,18 @@
+# home-assistant config directory droppings
+/config/.cloud/
+/config/.storage/
+/config/blueprints/
+/config/deps/
+/config/tts/
+/config/.HA_VERSION
+/config/home-assistant.log*
+/config/home-assistant_v2.db*
+
+
+
+
+# Python droppings
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
