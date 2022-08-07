@@ -6,4 +6,12 @@ services:
     volumes:
       - ./config:/config:rw
       - /etc/localtime:/etc/localtime:ro
+    devices:
+      # See RPi.GPIO-0.7.1/source/c_gpio.c
+      - /dev/gpiomem:/dev/gpiomem
+      - /dev/mem:/dev/mem
+      - /proc/cpuinfo:/proc/cpuinfo
+      - /proc/device-tree/soc/ranges:/proc/device-tree/soc/ranges
+      - /proc/device-tree/system/linux,revision:/proc/device-tree/system/linux,revision
+    privileged: true
     restart: unless-stopped
