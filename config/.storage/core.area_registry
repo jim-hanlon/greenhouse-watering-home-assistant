@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "id": "backyard",
+        "name": "Backyard",
+        "picture": null
+      },
+      {
+        "id": "bedroom",
+        "name": "Bedroom",
+        "picture": null
+      },
+      {
+        "id": "driveway",
+        "name": "Driveway",
+        "picture": null
+      },
+      {
+        "id": "frontyard",
+        "name": "Frontyard",
+        "picture": null
+      },
+      {
+        "id": "garage",
+        "name": "Garage",
+        "picture": null
+      },
+      {
+        "id": "greenhouse",
+        "name": "Greenhouse",
+        "picture": null
+      },
+      {
+        "id": "home",
+        "name": "Home",
+        "picture": null
+      },
+      {
+        "id": "home-city",
+        "name": "Sarasota",
+        "picture": null
+      },
+      {
+        "id": "home-state",
+        "name": "Florida",
+        "picture": null
+      },
+      {
+        "id": "kitchen",
+        "name": "Kitchen",
+        "picture": null
+      },
+      {
+        "id": "lanai",
+        "name": "Lanai",
+        "picture": null
+      },
+      {
+        "id": "living_room",
+        "name": "Living Room",
+        "picture": null
+      },
+      {
+        "id": "office",
+        "name": "Office",
+        "picture": null
+      },
+      {
+        "id": "orchidarium",
+        "name": "Orchidarium",
+        "picture": null
+      }
+    ]
+  }
+}
