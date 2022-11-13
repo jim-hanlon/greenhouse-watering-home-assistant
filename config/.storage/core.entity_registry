@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "minor_version": 7,
+  "minor_version": 8,
   "key": "core.entity_registry",
   "data": {
     "entities": [
       {
-        "area_id": "home",
+        "area_id": null,
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
@@ -15,16 +15,16 @@
         "entity_id": "person.home_assistant",
         "hidden_by": null,
         "icon": null,
-        "id": "4cc5dcc4addb9cce884124321a9fb2f1",
+        "id": "f155b73df1a3b7a166d36a06001f7ce8",
         "has_entity_name": false,
-        "name": "Administrator",
+        "name": null,
         "options": {},
-        "original_device_class": null,   
+        "original_device_class": null,
         "original_icon": null,
         "original_name": "home-assistant",
         "platform": "person",
         "supported_features": 0,
-        "unique_id": "home_assistant",   
+        "unique_id": "home_assistant",
         "unit_of_measurement": null
       },
       {
@@ -219,19 +219,19 @@
         "device_id": null,
         "disabled_by": null,
         "entity_category": null,
-        "entity_id": "person.home_assistant",
+        "entity_id": "automation.greenhouse_misting",
         "hidden_by": null,
         "icon": null,
-        "id": "f155b73df1a3b7a166d36a06001f7ce8",
+        "id": "1bfef04ad8b4b9551901fe55b78380e2",
         "has_entity_name": false,
         "name": null,
         "options": {},
         "original_device_class": null,
         "original_icon": null,
-        "original_name": "home-assistant",
-        "platform": "person",
+        "original_name": "Greenhouse Misting",
+        "platform": "automation",
         "supported_features": 0,
-        "unique_id": "home_assistant",
+        "unique_id": "1660418022066",
         "unit_of_measurement": null
       }
     ]
