@@ -1,2 +1,27 @@
-[]
+- id: '1660418022066'
+  alias: Greenhouse Misting
+  description: Run the Greenhouse misting line for 60 seconds every 15 minutes from
+    sunrise to sunset.
+  trigger:
+  - platform: time_pattern
+    minutes: /15
+  condition:
+  - condition: sun
+    before: sunset
+    after: sunrise
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.greenhouse_mister
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.greenhouse_mister
+  mode: single
 
