@@ -24,4 +24,89 @@
     target:
       entity_id: switch.greenhouse_mister
   mode: single
-
+- id: '1668388439143'
+  alias: Drip Line
+  description: Driveway drip line runs daily for 3 hours before sunrise.
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: -03:00:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.driveway_drip_line
+  - delay:
+      hours: 3
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.driveway_drip_line
+  mode: single
+- id: '1668389083143'
+  alias: Orchidarium North Sprinklers
+  description: Run Orchidarium north sprinklers at sunrise for 30 minutes on Monday,
+    Wednesday and Saturday.
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: 0
+  condition:
+  - condition: time
+    before: 00:00:00
+    weekday:
+    - mon
+    - wed
+    - sat
+    after: 00:00:00
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.orchidarium_sprinkler_north
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.orchidarium_sprinkler_north
+  mode: single
+- id: '1668389393046'
+  alias: Orchidarium South Sprinklers
+  description: Run Orchidarium south sprinklers at sunrise for 30 minutes on Monday,
+    Wednesday and Saturday.
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: +00:30:00
+  condition:
+  - condition: time
+    before: 00:00:00
+    weekday:
+    - mon
+    - wed
+    - sat
+    after: 00:00:00
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id:
+      - switch.orchidarium_sprinkler_south
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.orchidarium_sprinkler_south
+  mode: single
