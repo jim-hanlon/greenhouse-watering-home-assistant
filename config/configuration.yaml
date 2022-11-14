@@ -13,28 +13,28 @@ switch:
   - platform: rpi_gpio
     switches:
       - port: 5
-        name: "orchidarium.sprinkler.south"
+        name: "orchidarium_sprinkler_south"
         unique_id: "relay-01--ch-01"
       - port: 6
-        name: "orchidarium.sprinkler.north"
+        name: "orchidarium_sprinkler_north"
         unique_id: "relay-01--ch-02"
       - port: 13
-        name: "greenhouse.mister"
+        name: "greenhouse_mister"
         unique_id: "relay-01--ch-03"
       - port: 16
-        name: "driveway.drip-line"
+        name: "driveway_drip_line"
         unique_id: "relay-01--ch-04"
       - port: 19
-        name: "lanai.high-watering-line"
+        name: "lanai_high_watering_line"
         unique_id: "relay-01--ch-05"
       - port: 20
-        name: "lanai.low-watering-line"
+        name: "lanai_low_watering_line"
         unique_id: "relay-01--ch-06"
       - port: 21
-        name: "lanai.bench-watering-line"
+        name: "lanai_bench_watering_line"
         unique_id: "relay-01--ch-07"
       - port: 26
-        name: "backyard.watering-line"
+        name: "backyard_watering_line"
         unique_id: "relay-01--ch-08"
 
 
