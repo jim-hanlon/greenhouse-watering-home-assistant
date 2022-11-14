@@ -13,13 +13,13 @@ switch:
   - platform: rpi_gpio
     switches:
       - port: 5
-        name: "orchidarium_sprinkler_south"
+        name: "greenhouse_mister"
         unique_id: "relay-01--ch-01"
       - port: 6
         name: "orchidarium_sprinkler_north"
         unique_id: "relay-01--ch-02"
       - port: 13
-        name: "greenhouse_mister"
+        name: "orchidarium_sprinkler_south"
         unique_id: "relay-01--ch-03"
       - port: 16
         name: "driveway_drip_line"
