@@ -59,7 +59,6 @@
   - condition: time
     before: 00:00:00
     weekday:
-    - mon
     - wed
     - sat
     after: 00:00:00
@@ -90,7 +89,6 @@
   - condition: time
     before: 00:00:00
     weekday:
-    - mon
     - wed
     - sat
     after: 00:00:00
@@ -110,3 +108,4 @@
     target:
       entity_id: switch.orchidarium_sprinkler_south
   mode: single
+
